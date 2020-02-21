@@ -210,7 +210,7 @@ namespace KartGame.Track
 						GameControl.control.Save();
 
 						//activar la subrutina de nuevo record
-						NewRecordRoutine();
+						StartCoroutine (NewRecordRoutine());
 					}
 
                     if (racerCurrentLap == raceLapTotal)
