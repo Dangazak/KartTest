@@ -281,17 +281,17 @@ namespace KartGame.Track
             kartRepositioner.OnRepositionComplete -= ReenableControl;
         }
 
-		//subrutina para mostrar y ocultar el texto de nuevo record
-		private IEnumerator NewRecordRoutine()
-		{        
-			//Activar el texto de nuevo record
-			newRecordText.SetActive(true);
+	//subrutina para mostrar y ocultar el texto de nuevo record
+	private IEnumerator NewRecordRoutine()
+	{        
+		//Activar el texto de nuevo record
+		newRecordText.SetActive(true);
 
-			//Esperar 3 segundos
-			yield return new WaitForSeconds(3);
+		//Esperar 3 segundos
+		yield return new WaitForSeconds(3);
 
-			//Desactiva el texto de nuevo record
-			newRecordText.SetActive(false);
-		}
+		//Desactiva el texto de nuevo record
+		newRecordText.SetActive(false);
+	}
     }
 }
